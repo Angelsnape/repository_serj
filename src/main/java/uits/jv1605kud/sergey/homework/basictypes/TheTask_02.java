@@ -11,18 +11,7 @@ package uits.jv1605kud.sergey.homework.basictypes;
  */
 public class TheTask_02 {
     public static void main(String[] args) {
-      /*  int circle_r = 25;
-        double circle_R = 25.7;
-        double circle_c = Circumference(circle_r);
-        System.out.println("длина окружности: " + circle_c);
-        double s = AreaOfaAircle(circle_r);
-        System.out.println("площадь круга: " + s);
-        s = AreaRing(circle_r, circle_R);
-        System.out.println("площадь кольца: " + s);
-        int triangle_a = 15, triangle_b = 20, triangle_c = 25;
-        int triangle_s = (int)AreaOfaTriangle(triangle_a, triangle_b, triangle_c); // площадь треугольника 
-        System.out.println("площадь треугольника: " + triangle_s); */
-        
+   
         
     }
     static double Circumference(double r){ // Формула для вычисления периметра круга (длины окружности)
