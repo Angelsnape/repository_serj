@@ -14,35 +14,35 @@ public class TheTask_02 {
    
         
     }
-    static double Circumference(double r){ // Формула для вычисления периметра круга (длины окружности)
+    static double circumference(double r){ // Формула для вычисления периметра круга (длины окружности)
      double perimeter = 2*3.14*r;
      return perimeter;
              }
-    static double AreaOfaAircle(double r){ //  площадь круга
+    static double areaOfaAircle(double r){ //  площадь круга
       double p = 3.14;
       double area = p*r*r;
       return area;
              }
-    static double AreaRing(double r, double R){ // площадь кольца
+    static double areaRing(double r, double R){ // площадь кольца
       double p = 3.14;
       double s = p*((R*R)-(r*r));
       return s;
              }
-    static double PerimeterOftheTriangle(double a, double b, double c){  // периметр треугольника
+    static double perimeterOftheTriangle(double a, double b, double c){  // периметр треугольника
       double P = a+b+c;
       return P;
              }
-    static double AreaOfaTriangle(double a, double b, double c){ // Площадь треугольника по формуле Герона
+    static double areaOfaTriangle(double a, double b, double c){ // Площадь треугольника по формуле Герона
         double p = 0.5*(a+b+c);
         double p2 = (p *(p - a)*(p - b)*(p - c));
         double S =  Math.sqrt(p2);
         return S;
     }
-    static double PerimeterOfaRectangle(double a, double b){    // периметр прямоугольника
+    static double perimeterOfaRectangle(double a, double b){    // периметр прямоугольника
        double P = 2*(a+b);
        return P;
              }
-    static double AreaOfaRectangle(double a, double b ){    // площадь прямоугольника 
+    static double areaOfaRectangle(double a, double b ){    // площадь прямоугольника 
         double S = a*b;
         return S;
              }

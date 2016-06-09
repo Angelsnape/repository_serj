@@ -23,7 +23,7 @@ public class Task01 {
         int a;
         int b;
         a = sum(2);
-        System.out.println("сумма чисел: "+a);
+        System.out.println("сумма чисел: "+ a);
         System.out.println();
         
         b = sum(7);
@@ -34,11 +34,11 @@ public class Task01 {
         System.out.println();
         
         a = sum(5);
-        System.out.println("сумма чисел: "+a);
+        System.out.println("сумма чисел: "+ a);
         System.out.println();
         
         b = sum(3);
-        System.out.println("сумма чисел: "+b);
+        System.out.println("сумма чисел: "+ b);
         System.out.println();
         
         System.out.println("отношение последовательности чисел, кратных 5 к последовательностичисел, кратных 3: " + relations(a, b));
