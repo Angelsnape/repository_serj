@@ -14,7 +14,7 @@ import java.util.Random;
 public class Task02 {
     public static void main(String[] args) {
         Random random = new Random();
-        int number = random.nextInt(99);
+        int number = 91;
         int number01 = number/10;
         int[]mass ={0,10,20,30,40,50,60,70,80,90};
        
@@ -39,7 +39,9 @@ public class Task02 {
             case 90 : System.out.print("девяносто");
             break;
         }
-        number = number%10;
+       if(number>=20&&number%10!=0){
+           number = number%10;
+       }
         switch(number){
             
             case 0 : System.out.println("ноль");
@@ -82,9 +84,8 @@ public class Task02 {
             break;
             case 19 : System.out.println("девятнадцать");
             break;
-      
-            
                }
+        
          
     }
 }
