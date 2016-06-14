@@ -22,21 +22,21 @@ public class Task02 {
         
         
         switch(mass[number01]){
-            case 20 : System.out.print("двадцать");
+            case 20 : System.out.print("двадцать ");
             break;
-            case 30 : System.out.print("тридцать");
+            case 30 : System.out.print("тридцать ");
             break;
-            case 40 : System.out.print("сорок");
+            case 40 : System.out.print("сорок ");
             break;
-            case 50 : System.out.print("пятьдесят");
+            case 50 : System.out.print("пятьдесят ");
             break;
-            case 60 : System.out.print("шестьдесят");
+            case 60 : System.out.print("шестьдесят ");
             break;
-            case 70 : System.out.print("семьдесят");
+            case 70 : System.out.print("семьдесят ");
             break;
-            case 80 : System.out.print("восемьдесят");
+            case 80 : System.out.print("восемьдесят ");
             break;
-            case 90 : System.out.print("девяносто");
+            case 90 : System.out.print("девяносто ");
             break;
         }
        if(number>=20&&number%10!=0){
