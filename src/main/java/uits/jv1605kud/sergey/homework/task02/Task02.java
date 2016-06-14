@@ -16,7 +16,7 @@ public class Task02 {
         Random random = new Random();
         int number = random.nextInt(99);
         int number01 = number/10;
-        int[]mass ={0,10,20,30,40,50,60,70,80,90};
+        int[]mass ={0,10,20,30,40,50,60,70,80,90};// или вместо массива можно использовать такую запись int number01 = number/10*10; 
        
          
         
