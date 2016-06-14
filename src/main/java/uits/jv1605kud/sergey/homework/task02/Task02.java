@@ -14,7 +14,7 @@ import java.util.Random;
 public class Task02 {
     public static void main(String[] args) {
         Random random = new Random();
-        int number = 91;
+        int number = random.nextInt(99);
         int number01 = number/10;
         int[]mass ={0,10,20,30,40,50,60,70,80,90};
        
