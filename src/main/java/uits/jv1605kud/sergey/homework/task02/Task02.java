@@ -14,8 +14,34 @@ import java.util.Random;
 public class Task02 {
     public static void main(String[] args) {
         Random random = new Random();
-        int number =  random.nextInt(15);
+        int number = random.nextInt(99);
+        int number01 = number/10;
+        int[]mass ={0,10,20,30,40,50,60,70,80,90};
+       
+         
+        
+        
+        switch(mass[number01]){
+            case 20 : System.out.print("двадцать");
+            break;
+            case 30 : System.out.print("тридцать");
+            break;
+            case 40 : System.out.print("сорок");
+            break;
+            case 50 : System.out.print("пятьдесят");
+            break;
+            case 60 : System.out.print("шестьдесят");
+            break;
+            case 70 : System.out.print("семьдесят");
+            break;
+            case 80 : System.out.print("восемьдесят");
+            break;
+            case 90 : System.out.print("девяносто");
+            break;
+        }
+        number = number%10;
         switch(number){
+            
             case 0 : System.out.println("ноль");
             break;
             case 1 : System.out.println("один");
@@ -48,7 +74,17 @@ public class Task02 {
             break;
             case 15 : System.out.println("пятнадцать");
             break;
+            case 16 : System.out.println("шестнадцать");
+            break;
+            case 17 : System.out.println("семнадцать");
+            break;
+            case 18 : System.out.println("восемнадцать");
+            break;
+            case 19 : System.out.println("девятнадцать");
+            break;
+      
             
-                    }
+               }
+         
     }
 }
