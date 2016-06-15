@@ -38,22 +38,62 @@ public class Task03 {
           "соответствующей насущным потребностям","соответствующих условий активизации","модели развития","форм воздействия"};
        
       
-              int SIZE = 10;
-int[] masiv = new int[SIZE];
+  
+      Random random = new Random();
+         int num = 10;
+         int[]mas01 = new int[num];
+         int[]mas02 = new int[num];
+         int[]mas03 = new int[num];
+         int[]mas04 = new int[num];
+         
         
-Random r = new Random();
-int i = 0;
-while (i < SIZE)
-{
-  int temp = r.nextInt(SIZE);
-  if (masiv[temp] == 0)
-  {
-    masiv[temp] = i;
-    ++i;
-  }                
-}
-for (i = 0; i < SIZE; ++i)
-            System.out.println( phrases01[masiv[i]]+" "+phrases02[masiv[i]]+" "+ phrases03[masiv[i]]+" "+phrases04[masiv[i]]);
+  
+      int a = 0;
+      int b = 0;
+      int c = 0;
+      int d = 0;
+
+      while(a<num){
+         int r = random.nextInt(num);
+  
+      if(mas01[r]== 0){
+         mas01[r] = a;
+          a++;
+        }
+      }
+      while(b<num){
+         int r = random.nextInt(num);
+  
+      if(mas02[r]== 0){
+         mas02[r] = b;
+          b++;
+        }
+      }
+      while(c<num){
+         int r = random.nextInt(num);
+  
+      if(mas03[r]== 0){
+         mas03[r] = c;
+          c++;
+        }
+      }
+      while(d<num){
+         int r = random.nextInt(num);
+  
+      if(mas04[r]== 0){
+         mas04[r] = d;
+          d++;
+        }
+      }
+    
+      for(int i = 0; i<10;i++ ){
+     
+      System.out.println( phrases01[mas01[i]]+" "+phrases02[mas02[i]]+" "+phrases03[mas03[i]]+" "+phrases04[mas04[i]]);
+      
+        }
+ 
+  
+  
           
          
           
