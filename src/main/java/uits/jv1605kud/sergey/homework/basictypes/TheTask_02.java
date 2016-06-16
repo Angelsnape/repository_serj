@@ -10,10 +10,7 @@ package uits.jv1605kud.sergey.homework.basictypes;
  * @author SERJ
  */
 public class TheTask_02 {
-    public static void main(String[] args) {
    
-        
-    }
     static double circumference(double r){ // Формула для вычисления периметра круга (длины окружности)
      double perimeter = 2*3.14*r;
      return perimeter;

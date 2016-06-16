@@ -18,7 +18,7 @@ import java.util.Random;
  */
 public class Task03 {
     public static void main(String[] args) {
-      String[]phrases01 = {"Дорогие друзья!","с другой стороны","Не следует, однако,"
+      String[]phrases01 = {"Дорогие друзья!","с другой стороны","равным образом","Не следует, однако,"
        + " забывать о том, что","Таким образом,","Повседневная практика показывает, что",
          "Значимость этих проблем настолько очевидна, что","Разнообразный и богатый опыт","","Задача организации, "
        + "в особенности же","Соображения высшего порядка, а также"};
@@ -41,58 +41,33 @@ public class Task03 {
   
       Random random = new Random();
          int num = 10;
-         int[]mas01 = new int[num];
-         int[]mas02 = new int[num];
-         int[]mas03 = new int[num];
-         int[]mas04 = new int[num];
+         int[][]mas01 = new int[4][num];
          
-        
+          
+    for(int b = 0; b<4; b++){
+       int a = 0;
+       while(a<num){
+       int r = random.nextInt(num);
   
-      int a = 0;
-      int b = 0;
-      int c = 0;
-      int d = 0;
-
-      while(a<num){
-         int r = random.nextInt(num);
-  
-      if(mas01[r]== 0){
-         mas01[r] = a;
-          a++;
+    if(mas01[b][r]== 0){
+         mas01[b][r] = a;
+         a++;
+          
         }
       }
-      while(b<num){
-         int r = random.nextInt(num);
-  
-      if(mas02[r]== 0){
-         mas02[r] = b;
-          b++;
-        }
-      }
-      while(c<num){
-         int r = random.nextInt(num);
-  
-      if(mas03[r]== 0){
-         mas03[r] = c;
-          c++;
-        }
-      }
-      while(d<num){
-         int r = random.nextInt(num);
-  
-      if(mas04[r]== 0){
-         mas04[r] = d;
-          d++;
-        }
-      }
-    
-      for(int i = 0; i<10;i++ ){
+  }
+       
      
-      System.out.println( phrases01[mas01[i]]+" "+phrases02[mas02[i]]+" "+phrases03[mas03[i]]+" "+phrases04[mas04[i]]);
-      
-        }
  
-  
+      
+    
+ 
+     for(int i = 0;i<10;i++){
+      System.out.println( phrases01[mas01[0][i]]+" "+phrases02[mas01[1][i]]+" "+phrases03[mas01[2][i]]+" "+phrases04[mas01[3][i]]);
+     }
+        
+ 
+        
   
           
          
