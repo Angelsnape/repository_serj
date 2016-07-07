@@ -42,7 +42,8 @@ public class Task01 {
         System.out.println("сумма чисел: "+ sum(3));
         System.out.println();
         
-        System.out.println("отношение последовательности чисел, кратных 5 к последовательностичисел, кратных 3: " + relations(sum(5), sum(3)));
+        System.out.println("отношение последовательности чисел, кратных 5 к последовательностичисел, кратных 3: " 
+                + relations(sum(5), sum(3)));
          }
     
     static String karraliQadriyatlari(int number){
