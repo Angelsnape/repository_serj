@@ -45,37 +45,24 @@ public class Task03 {
          
           
     for(int b = 0; b<4; b++){
-       int a = 0;
-       while(a<num){
-       int r = random.nextInt(num);
+         int a = 0;
+    while(a<num){
+         int r = random.nextInt(num);
   
     if(mas01[b][r]== 0){
-         mas01[b][r] = a;
-         a++;
+             mas01[b][r] = a;
+             a++;
           
+             }
         }
-      }
   }
        
-     
- 
-      
-    
- 
-     for(int i = 0;i<10;i++){
+    for(int i = 0;i<10;i++){
       System.out.println( phrases01[mas01[0][i]]+" "+phrases02[mas01[1][i]]+" "+phrases03[mas01[2][i]]+" "+phrases04[mas01[3][i]]);
-     }
+              }
         
  
-        
-  
-          
-         
-          
-          
-          
-       }
-   
     }
+}
     
 
