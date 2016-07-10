@@ -23,22 +23,22 @@ public class Task01 {
     public static void main(String[] args) {
       
       
-        System.out.println("все чила от 0 до 100 кратные : 2"  + karraliQadriyatlari(2));
+        System.out.println("все чила от 0 до 100 кратные : 2 "  + karraliQadriyatlari(2));
         System.out.println("сумма чисел: "+ sum(2));
         System.out.println();
         
-        System.out.println("все чила от 0 до 100 кратные : 7"  + karraliQadriyatlari(7));
+        System.out.println("все чила от 0 до 100 кратные : 7 "  + karraliQadriyatlari(7));
         System.out.println("сумма чисел: "+ sum(7));
         System.out.println();
         
         System.out.println("разность сумм последовательности чисел, кратных 7 и 2: " + sumTwo(sum(2), sum(7)));
         System.out.println();
         
-        System.out.println("все чила от 0 до 100 кратные : 5"  + karraliQadriyatlari(5));
+        System.out.println("все чила от 0 до 100 кратные : 5 "  + karraliQadriyatlari(5));
         System.out.println("сумма чисел: "+ sum(5));
         System.out.println();
         
-        System.out.println("все чила от 0 до 100 кратные : 3"  + karraliQadriyatlari(3));
+        System.out.println("все чила от 0 до 100 кратные : 3 "  + karraliQadriyatlari(3));
         System.out.println("сумма чисел: "+ sum(3));
         System.out.println();
         

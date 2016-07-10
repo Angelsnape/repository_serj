@@ -55,8 +55,20 @@ public class Task04 {
            }
                   
               }
-              System.out.print(volume+" ");
+          
+              System.out.println(volume);
               
+                  int voulume_02 = 1;
+              for(int i = 0; i<array.length;i++){
+              if(array[i]%3==0){
+                  voulume_02 *= array[i];
+              
+              }
+                 
+              }
+               System.out.println(voulume_02);
+               
+               
 
     }
  
