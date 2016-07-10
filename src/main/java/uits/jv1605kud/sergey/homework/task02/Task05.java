@@ -22,6 +22,7 @@ import java.util.Random;
  * @author SERJ
  */
 public class Task05 {
+    
     public static void main(String[] args) {
         int [][]array = new int [10][10];
 
@@ -29,8 +30,16 @@ public class Task05 {
          fill(array);
          System.out.println(Arrays.deepToString(array));
          System.out.println();
-        invert(array);
-
+         invert(array);
+         System.out.println();
+         even(array);
+         System.out.println();
+         doNotEven(array);
+         System.out.println();
+         System.out.println();
+         System.out.println(seven(array));
+         System.out.println();
+         System.out.println(three(array));
         
       
     }
@@ -61,4 +70,75 @@ public class Task05 {
     
 
 }
+         static void even(int[][]array){
+             for(int i = 0; i <array.length;i++){
+                 if(i%2==0){
+                     System.out.println();
+                 for(int j = 0; j<array[i].length;j++){
+                   if(j%2==0){
+                       System.out.print(array[i][j]+" " );
+                   
+                   }
+                 
+                 }
+                 
+                 }
+             
+             }
+         
+         
+         }
+         static void doNotEven(int[][]array){
+             for(int i = 0; i <array.length;i++){
+                 if(i%2!=0){
+                     System.out.println();
+                 for(int j = 0; j<array[i].length;j++){
+                   if(j%2!=0){
+                       System.out.print(array[i][j]+" " );
+                   
+                   }
+                 
+                 }
+                 
+                 }
+             
+             }
+         
+         
+         }
+         static int seven(int[][]array){
+             int volume = 0 ;
+             for(int i = 0; i<array.length; i++){
+                 if(i%2==0){
+                     volume = 0;
+                     for(int j = 0;j<array[i].length;j++){
+                     if(array[i][j]%7==0){
+                      volume += array[i][j];
+                     
+                     }
+                     
+                     }
+                 }
+             }
+         return volume;
+         
+         }
+          static int three(int[][]array){
+             int volume = 0 ;
+             for(int i = 0; i<array.length; i++){
+                 if(i%2!=0){
+                     volume = 1;
+                     for(int j = 0;j<array[i].length;j++){
+                     if(array[i][j]%3==0){
+                      volume *= array[i][j];
+                     
+                     }
+                     
+                     }
+                 }
+             }
+         return volume;
+         
+         }
+         
 }
