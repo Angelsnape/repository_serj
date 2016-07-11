@@ -11,7 +11,7 @@
  */
 package uits.jv1605kud.sergey.homework.task02;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 /**
  *
@@ -25,11 +25,11 @@ public class Task06 {
             
             fill(array);
            // triangle(array);
-            //System.out.println();
+           //System.out.println();
          
            upright(array);
-           System.out.println();
-            triangleHorizontally(array);
+             System.out.println();
+           triangleHorizontally(array);
     }
     
     static void fill(int [][]array){
@@ -50,9 +50,8 @@ public class Task06 {
         for(int i = 0; i<array.length;i++){
               for(int j = 0; j<array[i].length;j++){
                   System.out.print(array[i][j]);
-                  
+                 }
               
-              }
               System.out.println();
          }
     
@@ -61,17 +60,17 @@ public class Task06 {
     static void triangleHorizontally(int[][]array){  
      String[]space = {"         ", "       ","     ","   "," "};
         
-    for(int i = 4; i>=0;i--){
+        for(int i = 4; i>=0;i--){
               for(int j = 0; j<array[i].length;j++){
-                  System.out.print(array[i][j]);
-                  
+                System.out.print(array[i][j]);
+                    }
               
-              }
                 System.out.print(space[i]);
-               for(int a =0;a<array[i].length;a++){
-                  
-                   System.out.print(array[i][a]);
+                
+              for(int a =0;a<array[i].length;a++){
+                  System.out.print(array[i][a]);
                }
+              
               System.out.println();
          }
     
@@ -83,19 +82,15 @@ public class Task06 {
         for(int i = 0; i<array.length;i++){
               for(int j = 0; j<array[i].length;j++){
                    System.out.print(array[i][j]);
-                 
-               }
+                 }
               
-              System.out.print(space[i]);
-               for(int a =0;a<array[i].length;a++){
-                  
-                   System.out.print(array[i][a]);
-                 
-                  }
+               System.out.print(space[i]);
+                for(int a =0;a<array[i].length;a++){
+                    System.out.print(array[i][a]);
+                   }
+                
               System.out.println();
-              
-     
-         }
+            }
     
     
     }
