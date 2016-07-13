@@ -24,7 +24,7 @@ public class Task06 {
             int [][]array = new int [5][];
             
             fill(array);
-           // triangle(array);
+          // triangle(array);
            //System.out.println();
          
            upright(array);
@@ -47,20 +47,19 @@ public class Task06 {
     static void triangle(int[][]array) {
         
         
-        for(int i = 0; i<array.length;i++){
-              for(int j = 0; j<array[i].length;j++){
-                  System.out.print(array[i][j]);
-                 }
-              
-              System.out.println();
-         }
+        for (int[] array1 : array) {
+            for (int j = 0; j < array1.length; j++) {
+                System.out.print(array1[j]);
+            }
+            System.out.println();
+        }
     
     }
     
     static void triangleHorizontally(int[][]array){  
      String[]space = {"         ", "       ","     ","   "," "};
         
-        for(int i = 4; i>=0;i--){
+        for(int i = array.length-1; i>=0;i--){
               for(int j = 0; j<array[i].length;j++){
                 System.out.print(array[i][j]);
                     }
