@@ -32,6 +32,9 @@ public class Task07 {
        
  
     }
+    
+    
+    
     static void conclusion(int[][]array ){
         for(int i = 0;i<array.length;i++){
           for(int j = 0; j<array[i].length;j++){
@@ -41,6 +44,9 @@ public class Task07 {
         
         }
     }
+    
+    
+    
     static void fill(int[][]array ){
       
         for(int i = 0;i<array.length;i++){
@@ -50,6 +56,7 @@ public class Task07 {
         }
      
     }
+    
     
     static void fillHor(int[][]array){
          int num = 0;
@@ -62,6 +69,8 @@ public class Task07 {
             }
     
     }
+    
+    
     static int[][] horizontally(int[][] array, int how, String side){
     
       int[]array_two = new int [array[array.length-1].length];
@@ -74,10 +83,10 @@ public class Task07 {
         if(left.equals(side)){
             for(int i = 0; i<array.length;i++){
               for(int j = 0; j<array[i].length-how;j++){
-                  array_two[j]= array[i][j+how];
+                  array_two[j]= array[i][j+how];        
                 }
               
-            for(int c = 0; c<how;c++){
+            for(int c = 0; c<how;c++){           
                   array_three[c]=array[i][c];
                 }
       
@@ -125,13 +134,18 @@ public class Task07 {
         return array;
    }
     
+    
+    
+    
     static int[][] upright(int[][]array, int how, String side){
-        int[][]array_two = new int[20][array.length];
+        
+        int[][]array_two = new int[array[array.length-1].length][array.length];
         
            String up = "up";
            String down = "down";
            
         if(up.equals(side)){
+            
               for(int i = 0; i<array.length;i++){
                   for(int j = 0; j<array[i].length;j++){
                      array_two[j][i]=array[i][j];

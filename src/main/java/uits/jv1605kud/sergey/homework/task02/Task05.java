@@ -107,37 +107,37 @@ public class Task05 {
          
          }
          static int seven(int[][]array){
-             int volume = 0 ;
+             int value = 0 ;
              for(int i = 0; i<array.length; i++){
                  if(i%2==0){
-                     volume = 0;
+                     value = 0;
                      for(int j = 0;j<array[i].length;j++){
                      if(array[i][j]%7==0){
-                      volume += array[i][j];
+                      value += array[i][j];
                      
                      }
                      
                      }
                  }
              }
-         return volume;
+         return value;
          
          }
           static int three(int[][]array){
-             int volume = 0 ;
+             int value = 0 ;
              for(int i = 0; i<array.length; i++){
                  if(i%2!=0){
-                     volume = 1;
+                     value = 1;
                      for(int j = 0;j<array[i].length;j++){
                      if(array[i][j]%3==0){
-                      volume *= array[i][j];
+                      value *= array[i][j];
                      
                      }
                      
                      }
                  }
              }
-         return volume;
+         return value;
          
          }
          

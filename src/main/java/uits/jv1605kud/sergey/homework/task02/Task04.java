@@ -46,27 +46,27 @@ public class Task04 {
                        System.out.print(array[i]+" ");
                       }
               }
-              int volume = 0 ;
+              int value = 0 ;
               System.out.println();
               for(int i = 0; i<array.length;i++){
               if(array[i]%7==0){
-                 volume += array[i];
+                 value += array[i];
                 
            }
                   
               }
           
-              System.out.println(volume);
+              System.out.println(value);
               
-                  int voulume_02 = 1;
+                  int value_02 = 1;
               for(int i = 0; i<array.length;i++){
               if(array[i]%3==0){
-                  voulume_02 *= array[i];
+                  value_02 *= array[i];
               
               }
                  
               }
-               System.out.println(voulume_02);
+               System.out.println(value_02);
                
                
 
