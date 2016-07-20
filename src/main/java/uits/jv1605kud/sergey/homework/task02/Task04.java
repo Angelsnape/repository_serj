@@ -31,21 +31,21 @@ public class Task04 {
           int number = array[i]; 
               array[i]= array[array.length - i -1];
                 array[array.length - i -1] = number;
-               }
+        }
            System.out.println(Arrays.toString(array));
            
            
               for(int i = 0; i<array.length;i++){
                   if(i%2==0){
                       System.out.print(array[i]+" ");
-                         }
-                     }
+                    }
+                }
               System.out.println();
               for(int i = 0; i<array.length;i++){
                    if(i%2!=0){
                        System.out.print(array[i]+" ");
-                      }
-              }
+                    }
+                }
               int value = 0 ;
               System.out.println();
               for(int i = 0; i<array.length;i++){
