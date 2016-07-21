@@ -72,11 +72,35 @@ class Bouquet{
          price += flower[index].price;
            
        }
-       System.out.println("цена букета"+ price);
+       System.out.println("цена букета "+ price);
        
    
    
    
    }
-   
+   void flowerStem (double a){
+       int index_one=0, index_two=0;
+    double number_one = 0;
+    double number_two = 100;
+    for(int index = 0;index<this.quantity-1;index++){
+      
+     
+      if(flower[index].stem_length>=number_one&&flower[index].stem_length<=a){
+           number_one = flower[index].stem_length;
+           index_one = index;
+      }
+      
+       if(flower[index].stem_length<=number_two&&flower[index].stem_length>=a){
+           number_two = flower[index].stem_length;
+           index_two = index;
+      }
+    }
+    number_one = a - number_one;
+    number_two = number_two -a;
+    if(number_one<number_two){System.out.println("цветок "+flower[index_one].flower_name+" длина стебля "+flower[index_one].stem_length);}
+    else{System.out.println("цветок "+flower[index_two].flower_name+" длина стебля "+flower[index_two].stem_length);}
+    
+   } 
+
+    
 }
