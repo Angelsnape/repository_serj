@@ -48,10 +48,13 @@ class Bouquet{
 
    
     
-   void sorting(Flower[]flower){
+   void sorting(){
        Flower[]array = new Flower[flower.length];
+       
        for(int barrier = flower.length-1;barrier>=0;barrier--){
+           
      for(int index = 0;index<barrier;index++){
+         if(flower[index+1]==null)break;
       if(flower[index].day>flower[index+1].day){
       array[index] = flower[index];
       flower[index]= flower[index+1];
@@ -59,8 +62,9 @@ class Bouquet{
          
         
       }
-     }
+     
        }
+       }
+    }
    
-    }  
 }
