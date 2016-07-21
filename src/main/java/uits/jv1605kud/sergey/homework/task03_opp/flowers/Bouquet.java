@@ -12,10 +12,10 @@ package uits.jv1605kud.sergey.homework.task03_opp.flowers;
 class Bouquet{
 
   int quantity;
-  Flower[]flower;
+  FlowerGirl[]flower;
 
     public Bouquet(int quantity) {
-        this.flower = new Flower[quantity];
+        this.flower = new FlowerGirl[quantity];
         this.quantity = quantity;
         
     }
@@ -24,20 +24,19 @@ class Bouquet{
     public void addFlowers(Flower flower ){
        for(int index = 0;index<quantity;index++){
            if(this.flower[index]==null){
-      this.flower[index] = flower;break;
+      this.flower[index] = (FlowerGirl) flower;break;
               
            }
         }
        
      }
     public void addFlowers(Flower flower, int quantity ){
+        int number = 0;
        for(int index = 0;index<this.quantity;index++){
-            if(index==quantity){
-           break;
-           }
+            if(number==quantity)break;
            if(this.flower[index]==null){
-      this.flower[index] = flower;
-              
+      this.flower[index] = (FlowerGirl) flower;
+              number++;
            }
           
         }
@@ -49,7 +48,7 @@ class Bouquet{
    
     
    void sorting(){
-       Flower[]array = new Flower[flower.length];
+       FlowerGirl[]array = new FlowerGirl[flower.length];
        
        for(int barrier = flower.length-1;barrier>=0;barrier--){
            
@@ -66,5 +65,18 @@ class Bouquet{
        }
        }
     }
+   void priceBouquet(){
+       double price = 0;
+       for(int index = 0;index<this.quantity;index++){
+           if(flower[index]==null)break;
+         price += flower[index].price;
+           
+       }
+       System.out.println("цена букета"+ price);
+       
+   
+   
+   
+   }
    
 }

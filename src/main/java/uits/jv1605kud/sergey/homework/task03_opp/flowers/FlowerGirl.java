@@ -49,18 +49,20 @@ class FlowerGirl extends Flower{
         Flower chrysanthemum = new FlowerGirl(20, "Хризантема", "Желтый", 4, 12);
         Flower gerbera = new FlowerGirl(17.50, "Гербера", "Розовый", 1, 11.67);
         Flower chamomile = new FlowerGirl(7, "Ромашка", "Белый", 5, 10);
-        Bouquet bouquet = new Bouquet(7);
+        Bouquet bouquet = new Bouquet(8);
       
         bouquet.addFlowers(rose,2);
         bouquet.addFlowers(tulip);
-        bouquet.addFlowers(chrysanthemum, 2);
+        bouquet.addFlowers(chrysanthemum,2);
         bouquet.addFlowers(gerbera);
         bouquet.addFlowers(chamomile);
-        System.out.println(bouquet.flower[0].flower_name);
+      
         
         bouquet.sorting();
-          System.out.println(bouquet.flower[0].flower_name);
-          System.out.println(bouquet.flower[1].flower_name);
+        for(int i = 0; i<7;i++){
+          System.out.println(bouquet.flower[i].flower_name);
+        }
+          bouquet.priceBouquet();
       }
        
         
